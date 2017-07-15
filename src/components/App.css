@@ -11,8 +11,8 @@
 }
 
 .Meet {
-  height: 25px;
-  margin: 0 1em 0 0.5em;
+  height: 26px;
+  margin: -4px 1em 0 0.5em;
   padding: 0;
   vertical-align: top;
 }
@@ -21,7 +21,7 @@
   display: inline-block;
   height: 1.2em;
   width: 1.2em;
-  margin: 0 1em -4px 0.5em;
+  margin: 0 1em -3px 0.5em;
   padding: 0;
   vertical-align: baseline;
   cursor: pointer;
