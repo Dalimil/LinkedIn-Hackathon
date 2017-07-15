@@ -1,4 +1,5 @@
 import React from 'react';
+import meet from './connect.png';
 
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import './ProfileCard.css';
@@ -31,7 +32,10 @@ class ProfileCard extends React.Component {
                 </div>
 
                 <div className="profilecard-text-container">
-                  <div className="profilecard-title">{this.props.name}</div>
+                  <div className="profilecard-title">{this.props.name}
+                  <img className="Connect" src={meet} style={{display: "inline-block" }} />
+
+                  </div>
                   <div className="profilecard-role">{this.props.role}</div>
 <div style={{ margin: "5px 0" }}>
                 {this.props.interests.map(i => <span className="skill-pill w3-tag w3-round-medium w3-teal">{i}</span>)}
