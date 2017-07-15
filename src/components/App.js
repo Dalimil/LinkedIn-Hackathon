@@ -60,7 +60,7 @@ class App extends Component {
           interests: ["Payments","Skydiving"]
         },
         {
-          name: "John Doe 6",
+          name: "John Doe",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 50, left: 20 },
@@ -69,7 +69,7 @@ class App extends Component {
           interests: ["Marketing", "UX", "Golf"]
         },
         {
-          name: "John Doe 7",
+          name: "John Doe",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 50, left: 10 },
@@ -79,7 +79,7 @@ class App extends Component {
         }
         ,
         {
-          name: "John Doe 8",
+          name: "John Doe",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 60, left: 10 },
@@ -89,7 +89,7 @@ class App extends Component {
         }
         ,
         {
-          name: "John Doe 9",
+          name: "John Doe",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 60, left: 20 },
@@ -98,7 +98,7 @@ class App extends Component {
           interests: ["Marketing", "UX", "Golf"]
         },
         {
-          name: "John Doe 10",
+          name: "John Doe",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 70, left: 45 },
@@ -107,7 +107,7 @@ class App extends Component {
           interests: ["Marketing", "UX", "Golf"]
         },
         {
-          name: "John Doe 11",
+          name: "John Doe",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 85, left: 45 },
@@ -116,7 +116,7 @@ class App extends Component {
           interests: ["Marketing", "UX", "Golf"]
         },
         {
-          name: "John Doe 12",
+          name: "John Doe",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 85, left: 55 },
@@ -125,7 +125,7 @@ class App extends Component {
           interests: ["Marketing", "UX", "Golf"]
         },
         {
-          name: "John Doe 13",
+          name: "John Doe",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 56, left: 55 },
@@ -134,7 +134,7 @@ class App extends Component {
           interests: ["Marketing", "UX", "Golf"]
         },
         {
-          name: "John Doe 14",
+          name: "John Doe",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 50, left: 30 },

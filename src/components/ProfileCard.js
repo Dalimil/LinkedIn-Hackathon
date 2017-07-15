@@ -33,7 +33,7 @@ class ProfileCard extends React.Component {
 
                 <div className="profilecard-text-container">
                   <div className="profilecard-title">{this.props.name}
-                  <img className="Connect" src={meet} style={{display: "inline-block" }} />
+                  <img className="Connect" src={meet} style={{display: "inline-block", height: "0.9em" }} />
 
                   </div>
                   <div className="profilecard-role">{this.props.role}</div>
