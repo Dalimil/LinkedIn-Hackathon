@@ -199,7 +199,7 @@ class App extends Component {
         <div className="App-header">
           <img className="App-logo" src={logo} style={{display: "inline" }} />
           <h4 style={{ display: "inline" }}>LinkedIn Hackathon</h4>
-          <span style={{float: "right"}} onClick={() => this.openNav()}>Meet New People</span>
+          <span style={{float: "right", cursor: "pointer", fontWeight: "bold", paddingRight: "1em"}} onClick={() => this.openNav()}>★ Meet New People</span>
 
         </div>
         <div className="map" onClick={() => this.toggleCard(null)}>
