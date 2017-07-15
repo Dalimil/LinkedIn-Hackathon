@@ -1,26 +1,59 @@
 
 .profilecard-container {
   position: relative;
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 5px;
 }
 
 .profilecard-inner {
+  position: relative;
   width: 50px;
   height: 50px;
   background-color: #00BFA5;
   border-radius: 100%;
-  position: absolute;
   cursor: pointer;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   transition: all 0.3s;
+  margin: 1em;
+  padding: 1em;
+  overflow: hidden;
 }
 
 .profilecard-inner.expanded {
   width: 300px;
-  height: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.profilecard-photo {
+  width: 50px;
+  height: 50px;
+  background: #ee3333;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.profilecard-title {
+  font-size: 1.5em;
+}
+
+.profilecard-descr {
+  font-size: 0.9em;
+  color: #333;
+}
+
+.profilecard-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1em;
+  width: 100%;
+}
+
+.profilecard-contents-group-appear {
+  opacity: 0.01;
+  transform: scale(0.1);
+}
+
+.profilecard-contents-group-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-out, transform 0.3s ease-out;
+  transform: scale(1);
 }
