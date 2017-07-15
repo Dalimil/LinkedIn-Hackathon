@@ -7,27 +7,22 @@ class ProfileCard extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      expanded: false
-    };
-  }
-
-  toggleCard() {
-    this.setState(prevState => ({ expanded: !prevState.expanded}));
   }
 
   render() {
     return (
       <div className="profilecard-container"
           style={{ top: this.props.coords.top, left: this.props.coords.left}} >
-        <div className={"profilecard-inner card-1" + (this.state.expanded ? " expanded" : "")}
-            onClick={this.toggleCard.bind(this)}
-            style={{ backgroundImage: this.state.expanded ? 'none' : `url(${this.props.img})`}}>
-          {this.state.expanded ? (
+        <div className={"profilecard-inner card-1" + (this.props.expanded ? " expanded" : "")}
+            onClick={() => this.props.toggleCard(this.props.index)}
+            style={{ backgroundImage: this.props.expanded ? 'none' : `url(${this.props.img})`}}>
+          {this.props.expanded ? (
             <CSSTransitionGroup
                 transitionName="profilecard-contents-group"
                 transitionAppear={true}
-                transitionAppearTimeout={500}>
+                transitionAppearTimeout={500}
+                transitionEnterTimeout={500}
+                transitionLeaveTimeout={500}>
               <div style={{ display: "flex", marginBottom: "1em" }}>
                 <div className="profilecard-photo" style={{backgroundImage: `url(${this.props.img})`}}>
                 </div>

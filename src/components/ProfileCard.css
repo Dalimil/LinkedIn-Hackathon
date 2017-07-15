@@ -3,6 +3,9 @@
   --icon-size-big: 80px;
 }
 
+@keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
+
+
 .profilecard-container {
   position: absolute;
 }
@@ -13,7 +16,7 @@
   height: var(--icon-size);
   background-color: #eee;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   border: 1px solid white;
   border-radius: 100%;
   cursor: pointer;
@@ -21,12 +24,17 @@
   margin: 1em;
   padding: 1em;
   overflow: hidden;
+
+  box-shadow: 0 0 0 0px rgba(232, 76, 61, 0.7);
+  /*animation: pulse 3.25s infinite cubic-bezier(0.66, 0, 0, 1);*/
+  animation: pulse 2s infinite ease-in-out;
 }
 
 .profilecard-inner.expanded {
   width: 300px;
   height: 200px;
   border-radius: 5px;
+  animation: none;
 }
 
 .profilecard-photo {
@@ -34,7 +42,7 @@
   height: var(--icon-size-big);
   background: #555;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   border: 1px solid white;
   border-radius: 5px;
   flex-shrink: 0;
