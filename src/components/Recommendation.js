@@ -1,4 +1,5 @@
 import React from 'react';
+import { people } from './people';
 
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import './Recommendation.css';
@@ -24,21 +25,30 @@ class Recommendation extends React.Component {
 
       <div className="w3-container">
 
-      <div className="w3-card-4" style={{width: "70%:",bgcolor:"#fff"}}>
+      <div className="w3-card-4" >
 
       <header className="w3-container w3-light-grey">
-        <h3>John Doe</h3>
+        <h3>Stephan S.</h3>
       </header>
       <div className="w3-container">
-        <p>1 new friend request</p>
+      <p><span className="w3-tag w3-round-medium w3-blue">Fri, 5-6pm</span>
+      </p>
+
+        <img src={people[1]} alt="Avatar" class="w3-left w3-circle" style={{width:"80px"}}/>
         <hr/>
-        <img src="people[1]" alt="Avatar" class="w3-left w3-circle w3-margin-right" style={{width:"60px"}}/>
-        <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p>
+        <p><span className="w3-tag w3-round-medium w3-teal">Horse Riding</span></p>
+          <p><span className="w3-tag w3-round-medium w3-teal">Theatre</span></p>
+          <p>I am working as Senior Software Developer since past 5 years. </p>
       </div>
       <button className="w3-button w3-block w3-dark-grey">+ Connect</button>
 
       </div>
+
+
       </div>
+
+
+
 </div>
 
 
