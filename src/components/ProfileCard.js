@@ -29,7 +29,7 @@ class ProfileCard extends React.Component {
               <div style={{ display: "flex", marginBottom: "1em" }}>
                 <div className="profilecard-photo" style={{backgroundImage: `url(${this.props.img})`}}>
                 </div>
-                
+
                 <div className="profilecard-text-container">
                   <div className="profilecard-title">{this.props.name}</div>
                   <div className="profilecard-role">{this.props.role}</div>
@@ -39,7 +39,7 @@ class ProfileCard extends React.Component {
                 </div>
               </div>
               <div className="profilecard-descr">{this.props.description}</div>
-              
+
             </CSSTransitionGroup>
           ) : ""}
         </div>
