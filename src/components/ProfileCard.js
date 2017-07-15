@@ -18,8 +18,9 @@ class ProfileCard extends React.Component {
 
   render() {
     return (
-      <div className="profilecard-container">
-        <div className={"profilecard-inner" + (this.state.expanded ? " expanded" : "")}
+      <div className="profilecard-container"
+          style={{ top: this.props.coords.top, left: this.props.coords.left}} >
+        <div className={"profilecard-inner card-1" + (this.state.expanded ? " expanded" : "")}
           onClick={this.toggleCard.bind(this)} >
           {this.state.expanded ? (
             <CSSTransitionGroup

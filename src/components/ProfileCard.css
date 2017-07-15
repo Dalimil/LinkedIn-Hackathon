@@ -1,6 +1,6 @@
 
 .profilecard-container {
-  position: relative;
+  position: absolute;
 }
 
 .profilecard-inner {
