@@ -12,6 +12,7 @@ class App extends Component {
     super(props);
     this.lastPopupFix = Date.now();
     this.state = {
+      navOpened: false,
       people: [
         {
           name: "John Smith",
@@ -150,6 +151,7 @@ class App extends Component {
         return x;
       })
     };
+    this.navClosed = true;
   }
 
   toggleCard(ind) {
@@ -189,7 +191,9 @@ class App extends Component {
   }
 
   openNav() {
-     return (document.getElementById("mySidenav").style.width = "250px");
+    this.navClosed ? (document.getElementById("mySidenav").style.width = "250px") :
+      (document.getElementById("mySidenav").style.width = "0");
+    this.navClosed = !this.navClosed;
   }
 
 
@@ -203,7 +207,7 @@ class App extends Component {
 
             <h4 style={{ display: "inline" }}>FLOOR</h4>
           </div>
-          <span style={{display: "inline-block", cursor: "pointer", fontWeight: "bold", paddingRight: "1em"}} onClick={() => this.openNav()}>
+          <span style={{display: "inline-block", cursor: "pointer", fontWeight: "bold", paddingRight: "1em", zIndex: 10}} onClick={() => this.openNav()}>
           <img className="Meet" src={meet} style={{display: "inline-block" }} />
 
           Meet New People</span>
