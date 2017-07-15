@@ -32,9 +32,14 @@ class ProfileCard extends React.Component {
                 <div className="profilecard-text-container">
                   <div className="profilecard-title">{this.props.name}</div>
                   <div className="profilecard-role">{this.props.role}</div>
+
                 </div>
               </div>
-              <div className="profilecard-descr">{this.props.description}</div>
+              <div className="profilecard-descr">{this.props.description}
+              <p><span className="w3-tag w3-round-medium w3-teal">Horse Riding</span></p>
+
+
+              </div>
             </CSSTransitionGroup>
           ) : ""}
         </div>

@@ -18,7 +18,8 @@ class App extends Component {
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 57, left: 47 },
           img: people[0],
-          pulseColor: "green"
+          pulseColor: "green",
+          interests: ["horse riding","abc"]
         },
         {
           name: "John Doe 2",
@@ -26,7 +27,9 @@ class App extends Component {
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 75, left: 83 },
           img: people[1],
-          pulseColor: "amber"
+          pulseColor: "amber",
+          interests: ["horse riding","abc"]
+
         },
         {
           name: "John Doe 3",
@@ -34,7 +37,8 @@ class App extends Component {
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 85, left: 10 },
           img: people[2],
-          pulseColor: "red"
+          pulseColor: "red",
+          interests: ["horse riding","abc"]
         },
         {
           name: "John Doe 4",
@@ -42,7 +46,8 @@ class App extends Component {
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 50, left: 80 },
           img: people[3],
-          pulseColor: "green"
+          pulseColor: "green",
+          interests: ["horse riding","abc"]
         },
         {
           name: "John Doe 5",
@@ -50,7 +55,8 @@ class App extends Component {
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 70, left: 55 },
           img: people[4],
-          pulseColor: "amber"
+          pulseColor: "amber",
+          interests: ["horse riding","abc"]
         },
         {
           name: "John Doe 6",
@@ -58,8 +64,83 @@ class App extends Component {
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
           coords: { top: 50, left: 20 },
           img: people[5],
-          pulseColor: "red"
+          pulseColor: "red",
+          interests: ["horse riding","abc"]
+        },
+        {
+          name: "John Doe 7",
+          role: "Senior Product Manager",
+          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          coords: { top: 50, left: 10 },
+          img: people[6],
+          pulseColor: "red",
+          interests: ["horse riding","abc"]
         }
+        ,
+        {
+          name: "John Doe 8",
+          role: "Senior Product Manager",
+          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          coords: { top: 60, left: 10 },
+          img: people[7],
+          pulseColor: "red",
+          interests: ["horse riding","abc"]
+        }
+        ,
+        {
+          name: "John Doe 9",
+          role: "Senior Product Manager",
+          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          coords: { top: 60, left: 20 },
+          img: people[8],
+          pulseColor: "red",
+          interests: ["horse riding","abc"]
+        },
+        {
+          name: "John Doe 10",
+          role: "Senior Product Manager",
+          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          coords: { top: 70, left: 45 },
+          img: people[9],
+          pulseColor: "amber",
+          interests: ["horse riding","abc"]
+        },
+        {
+          name: "John Doe 11",
+          role: "Senior Product Manager",
+          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          coords: { top: 85, left: 45 },
+          img: people[10],
+          pulseColor: "amber",
+          interests: ["horse riding","abc"]
+        },
+        {
+          name: "John Doe 12",
+          role: "Senior Product Manager",
+          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          coords: { top: 85, left: 55 },
+          img: people[11],
+          pulseColor: "amber",
+          interests: ["horse riding","abc"]
+        },
+        {
+          name: "John Doe 13",
+          role: "Senior Product Manager",
+          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          coords: { top: 56, left: 55 },
+          img: people[12],
+          pulseColor: "amber",
+          interests: ["horse riding","abc"]
+        },
+        {
+          name: "John Doe 14",
+          role: "Senior Product Manager",
+          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          coords: { top: 50, left: 30 },
+          img: people[13],
+          pulseColor: "red",
+          interests: ["horse riding","abc"]
+        },
       ].map((x, i) => {
         x.index = i;
         x.expanded = false;
