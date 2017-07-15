@@ -31,18 +31,16 @@ class Recommendation extends React.Component {
         <h3>Stephan S.</h3>
       </header>
       <div className="w3-container">
-      <p><span className="w3-tag w3-round-medium w3-blue">Fri, 5-6pm</span>
+      <p><span className="w3-tag w3-round-medium w3-blue">Fri, 5-6pm @ the eBar</span>
       </p>
 
         <img src={people[1]} alt="Avatar" class="w3-left w3-circle" style={{width:"80px"}}/>
-        
+
         <div style={{ display: "flex", flexWrap: "wrap"}}>
           <span style={{ margin: "0.5em 0.5em 0 0" }} className="w3-tag w3-round-medium w3-teal">Marketing</span>
-          <span style={{ margin: "0.5em 0.5em 0 0" }} className="w3-tag w3-round-medium w3-teal">UX</span>
-
-          <span style={{ margin: "0.5em 0.5em 0 0" }} className="w3-tag w3-round-medium w3-teal">Golf</span>
+          <span style={{ margin: "0.5em 0.5em 0 0" }} className="w3-tag w3-round-medium w3-teal">Paragliding</span>
           <div style={{ margin: "0.5em 0" }}>
-          I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.
+          I spent the past 3 years as a senior product manager, working on internal cloud solutions. I love hiking and rock-climbing -- whatever gets my adrenaline pumping!
           </div>
         </div>
       </div>
