@@ -24,7 +24,7 @@ class App extends Component {
           name: "John Doe 2",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
-          coords: { top: 75, left: 85 },
+          coords: { top: 75, left: 83 },
           img: people[1],
           pulseColor: "amber"
         },
@@ -84,7 +84,6 @@ class App extends Component {
     });
     if (ind != null) {
       newPeople[ind].expanded = flip;
-      console.log("fine");
     }
     this.setState({
       people: newPeople
