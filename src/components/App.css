@@ -4,9 +4,16 @@
 }
 
 .App-logo {
-  height: 20px;
-  padding-right: 1em;
-  padding-bottom:  0.1 em;
+  height: 30px;
+  padding-right: 0.2em;
+  padding-bottom:  0.4em;
+}
+
+.Meet {
+  height: 30px;
+  padding-right: 0.1em;
+  padding-bottom:  0.4em;
+
 }
 
 .App-header {
@@ -16,7 +23,7 @@
 }
 
 .App-header.h4 {
-  
+
 }
 
 @keyframes App-logo-spin {

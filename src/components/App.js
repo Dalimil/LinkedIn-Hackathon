@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './floor-logo.png';
+import meet from './meet-icon.png';
 import './App.css';
 import ProfileCard from './ProfileCard'
 import { people } from './people';
@@ -200,9 +201,11 @@ class App extends Component {
           <img className="App-logo" src={logo} style={{display: "inline" }} />
 
           <h4 style={{ display: "inline" }}>FLOOR</h4>
-          <span style={{float: "right", cursor: "pointer", fontWeight: "bold", paddingRight: "1em"}} onClick={() => this.openNav()}>★ Meet New People</span>
+          <span style={{float: "right", cursor: "pointer", fontWeight: "bold", paddingRight: "1em"}} onClick={() => this.openNav()}>
+          <img className="Meet" src={meet} style={{display: "inline" }} />
+          Meet New People</span>
 
-        
+
 
         </div>
         <div className="map" onClick={() => this.toggleCard(null)}>
@@ -211,10 +214,6 @@ class App extends Component {
           {this.state.people.map((p, i) => (<ProfileCard key={i} {...p} />))}
         </div>
         <Recommendation/>
-
-
-
-
 
 
       </div>
