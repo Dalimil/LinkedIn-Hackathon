@@ -13,50 +13,50 @@ class App extends Component {
     this.state = {
       people: [
         {
-          name: "John Doe",
+          name: "John Smith",
           role: "Senior Product Manager",
-          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          description: "Currently, I am working on rolling out a new cloud product",
           coords: { top: 57, left: 47 },
           img: people[0],
           pulseColor: "green",
-          interests: ["horse riding","abc"]
+          interests: ["Product Management","Game of Thrones","SaaS"]
         },
         {
-          name: "John Doe 2",
-          role: "Senior Product Manager",
-          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          name: "Adam Grant",
+          role: "Software Developer I",
+          description: "I am developing the backend of our cloud payments feature.",
           coords: { top: 75, left: 83 },
           img: people[1],
           pulseColor: "amber",
-          interests: ["horse riding","abc"]
+          interests: ["Python","Payments","Hiking"]
 
         },
         {
-          name: "John Doe 3",
-          role: "Senior Product Manager",
-          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          name: "Michael Wozniski",
+          role: "Senior Software Developer",
+          description: "I am out on vacation.",
           coords: { top: 85, left: 10 },
           img: people[2],
           pulseColor: "red",
-          interests: ["horse riding","abc"]
+          interests: ["Hiking","Theatre","Software Mgmt"]
         },
         {
-          name: "John Doe 4",
-          role: "Senior Product Manager",
-          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          name: "Alicia May",
+          role: "Product Manager",
+          description: "I am currently managing the software team that is working on the cloud payments feature.",
           coords: { top: 50, left: 80 },
           img: people[3],
           pulseColor: "green",
-          interests: ["horse riding","abc"]
+          interests: ["Wine","Reading","Travelling"]
         },
         {
-          name: "John Doe 5",
-          role: "Senior Product Manager",
-          description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
+          name: "Mary Martin",
+          role: "Software Developer II",
+          description: "I am working on our new cloud payments feature.",
           coords: { top: 70, left: 55 },
           img: people[4],
           pulseColor: "amber",
-          interests: ["horse riding","abc"]
+          interests: ["Payments","Beach","Skydiving"]
         },
         {
           name: "John Doe 6",
