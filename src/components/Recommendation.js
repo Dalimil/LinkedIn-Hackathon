@@ -35,10 +35,16 @@ class Recommendation extends React.Component {
       </p>
 
         <img src={people[1]} alt="Avatar" class="w3-left w3-circle" style={{width:"80px"}}/>
-        <hr/>
-        <p><span className="w3-tag w3-round-medium w3-teal">Horse Riding</span></p>
-          <p><span className="w3-tag w3-round-medium w3-teal">Theatre</span></p>
-          <p>I am working as Senior Software Developer since past 5 years. </p>
+        
+        <div style={{ display: "flex", flexWrap: "wrap"}}>
+          <span style={{ margin: "0.5em 0.5em 0 0" }} className="w3-tag w3-round-medium w3-teal">Marketing</span>
+          <span style={{ margin: "0.5em 0.5em 0 0" }} className="w3-tag w3-round-medium w3-teal">UX</span>
+
+          <span style={{ margin: "0.5em 0.5em 0 0" }} className="w3-tag w3-round-medium w3-teal">Golf</span>
+          <div style={{ margin: "0.5em 0" }}>
+          I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.
+          </div>
+        </div>
       </div>
       <button className="w3-button w3-block w3-dark-grey">+ Connect</button>
 
