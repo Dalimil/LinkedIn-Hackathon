@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './floor-logo.png';
+import meet from './meet-icon.png';
 import './App.css';
 import ProfileCard from './ProfileCard'
 import { people } from './people';
@@ -211,10 +212,6 @@ class App extends Component {
           {this.state.people.map((p, i) => (<ProfileCard key={i} {...p} />))}
         </div>
         <Recommendation/>
-
-
-
-
 
 
       </div>
