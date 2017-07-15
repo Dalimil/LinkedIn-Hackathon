@@ -1,5 +1,6 @@
 import React from 'react';
 import meet from './connect.png';
+import meetActive from './connect_active.png';
 
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import './ProfileCard.css';
@@ -33,7 +34,7 @@ class ProfileCard extends React.Component {
 
                 <div className="profilecard-text-container">
                   <div className="profilecard-title">{this.props.name}
-                  <img className="Connect" src={meet} style={{display: "inline-block", height: "0.9em" }} />
+                  <div className="Connect" />
 
                   </div>
                   <div className="profilecard-role">{this.props.role}</div>

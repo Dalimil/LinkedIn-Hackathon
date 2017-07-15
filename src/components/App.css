@@ -18,10 +18,19 @@
 }
 
 .Connect {
-  height: 25px;
-  margin: 0 1em 0 0.5em;
+  display: inline-block;
+  height: 1.1em;
+  width: 1.1em;
+  margin: 0 1em -2px 0.5em;
   padding: 0;
   vertical-align: baseline;
+  cursor: pointer;
+  background-image: url('/connect.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Connect:hover {
+  background-image: url('/connect_active.png');
 }
 
 .App-header {
