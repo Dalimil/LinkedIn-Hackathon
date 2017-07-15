@@ -29,18 +29,17 @@ class ProfileCard extends React.Component {
               <div style={{ display: "flex", marginBottom: "1em" }}>
                 <div className="profilecard-photo" style={{backgroundImage: `url(${this.props.img})`}}>
                 </div>
+                
                 <div className="profilecard-text-container">
                   <div className="profilecard-title">{this.props.name}</div>
                   <div className="profilecard-role">{this.props.role}</div>
-
+<div style={{ margin: "5px 0" }}>
+                {this.props.interests.map(i => <span className="skill-pill w3-tag w3-round-medium w3-teal">{i}</span>)}
+              </div>
                 </div>
               </div>
-              <div className="profilecard-descr">{this.props.description}
-              {this.props.interests.map(i => <span className="w3-tag w3-round-medium w3-teal">{i}</span>)}
-
-
-
-              </div>
+              <div className="profilecard-descr">{this.props.description}</div>
+              
             </CSSTransitionGroup>
           ) : ""}
         </div>

@@ -28,7 +28,7 @@
 }
 
 .profilecard-inner.expanded {
-  width: 300px;
+  width: 320px;
   height: 200px;
   border-radius: 5px;
   animation: none;
@@ -97,4 +97,8 @@
   opacity: 1;
   transition: opacity .5s ease-out, transform 0.3s ease-out;
   transform: scale(1);
+}
+.skill-pill {
+  display: inline-block;
+  margin: 0 0.2em 0 0;
 }

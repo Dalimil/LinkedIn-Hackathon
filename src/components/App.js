@@ -19,7 +19,7 @@ class App extends Component {
           coords: { top: 57, left: 47 },
           img: people[0],
           pulseColor: "green",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
         {
           name: "John Doe 2",
@@ -28,7 +28,7 @@ class App extends Component {
           coords: { top: 75, left: 83 },
           img: people[1],
           pulseColor: "amber",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
 
         },
         {
@@ -38,7 +38,7 @@ class App extends Component {
           coords: { top: 85, left: 10 },
           img: people[2],
           pulseColor: "red",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
         {
           name: "John Doe 4",
@@ -47,7 +47,7 @@ class App extends Component {
           coords: { top: 50, left: 80 },
           img: people[3],
           pulseColor: "green",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
         {
           name: "John Doe 5",
@@ -56,7 +56,7 @@ class App extends Component {
           coords: { top: 70, left: 55 },
           img: people[4],
           pulseColor: "amber",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
         {
           name: "John Doe 6",
@@ -65,7 +65,7 @@ class App extends Component {
           coords: { top: 50, left: 20 },
           img: people[5],
           pulseColor: "red",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
         {
           name: "John Doe 7",
@@ -74,7 +74,7 @@ class App extends Component {
           coords: { top: 50, left: 10 },
           img: people[6],
           pulseColor: "red",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         }
         ,
         {
@@ -84,7 +84,7 @@ class App extends Component {
           coords: { top: 60, left: 10 },
           img: people[7],
           pulseColor: "red",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         }
         ,
         {
@@ -94,7 +94,7 @@ class App extends Component {
           coords: { top: 60, left: 20 },
           img: people[8],
           pulseColor: "red",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
         {
           name: "John Doe 10",
@@ -103,7 +103,7 @@ class App extends Component {
           coords: { top: 70, left: 45 },
           img: people[9],
           pulseColor: "amber",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
         {
           name: "John Doe 11",
@@ -112,7 +112,7 @@ class App extends Component {
           coords: { top: 85, left: 45 },
           img: people[10],
           pulseColor: "amber",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
         {
           name: "John Doe 12",
@@ -121,7 +121,7 @@ class App extends Component {
           coords: { top: 85, left: 55 },
           img: people[11],
           pulseColor: "amber",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
         {
           name: "John Doe 13",
@@ -130,7 +130,7 @@ class App extends Component {
           coords: { top: 56, left: 55 },
           img: people[12],
           pulseColor: "amber",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
         {
           name: "John Doe 14",
@@ -139,7 +139,7 @@ class App extends Component {
           coords: { top: 50, left: 30 },
           img: people[13],
           pulseColor: "red",
-          interests: ["horse riding","abc"]
+          interests: ["Marketing", "UX", "Golf"]
         },
       ].map((x, i) => {
         x.index = i;
@@ -197,14 +197,14 @@ class App extends Component {
     return (
       <div className="App" ref={(appEl) => this.appEl = appEl}>
         <div className="App-header">
-          <img className="App-logo" src={logo} style={{display: "inline" }} />
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img className="App-logo" src={logo} style={{display: "inline-block" }} />
 
-          <h4 style={{ display: "inline" }}>FLOOR</h4>
-          <span style={{float: "right", cursor: "pointer", fontWeight: "bold", paddingRight: "1em"}} onClick={() => this.openNav()}>★ Meet New People</span>
-
-        
-
+            <h4 style={{ display: "inline" }}>FLOOR</h4>
+          </div>
+          <span style={{display: "inline-block", cursor: "pointer", fontWeight: "bold", paddingRight: "1em"}} onClick={() => this.openNav()}>Meet New People</span>
         </div>
+
         <div className="map" onClick={() => this.toggleCard(null)}>
           <img className="card-1" src={floorplan} ref={(im) => this.mapImg = im}
               style={{ position: 'absolute', top: 0, left: 0, width: "100%"}} />
