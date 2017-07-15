@@ -52,12 +52,12 @@ class App extends Component {
         },
         {
           name: "Gary Martin",
-          role: "Software Developer II",
-          description: "I am working on our new cloud payments feature.",
+          role: "Software Developer",
+          description: "I am working on our new cloud payments feature. I would love to grab a coffee and chat about best places to sky-dive!",
           coords: { top: 70, left: 55 },
           img: people[4],
           pulseColor: "amber",
-          interests: ["Payments","Skydiving"]
+          interests: ["VC","Parkour","Horses"]
         },
         {
           name: "John Doe",
