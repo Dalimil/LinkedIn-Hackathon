@@ -188,6 +188,7 @@ class App extends Component {
   componentDidMount() {
     this.fixIconHeightOffset();
     window.onresize = this.fixIconHeightOffset.bind(this);
+    setTimeout(this.fixIconHeightOffset, 1000);
   }
 
   openNav() {
