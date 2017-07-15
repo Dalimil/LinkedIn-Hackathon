@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './floor-logo.png';
 import './App.css';
 import ProfileCard from './ProfileCard'
 import { people } from './people';
@@ -198,7 +198,7 @@ class App extends Component {
       <div className="App" ref={(appEl) => this.appEl = appEl}>
         <div className="App-header">
           <img className="App-logo" src={logo} style={{display: "inline" }} />
-          <h4 style={{ display: "inline" }}>LinkedIn Hackathon</h4>
+          <h4 style={{ display: "inline" }}>FLOOR</h4>
           <span style={{float: "right"}} onClick={() => this.openNav()}>Meet New People</span>
 
         </div>

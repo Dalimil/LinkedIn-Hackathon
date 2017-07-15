@@ -52,10 +52,6 @@ class Recommendation extends React.Component {
 </div>
 
 
-
-
-
-
     );
   }
 }

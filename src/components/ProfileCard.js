@@ -36,7 +36,8 @@ class ProfileCard extends React.Component {
                 </div>
               </div>
               <div className="profilecard-descr">{this.props.description}
-              <p><span className="w3-tag w3-round-medium w3-teal">Horse Riding</span></p>
+              {this.props.interests.map(i => <span className="w3-tag w3-round-medium w3-teal">{i}</span>)}
+
 
 
               </div>
