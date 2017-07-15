@@ -3,3 +3,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Deployment
 https://dalimil.github.io/LinkedIn-Hackathon/
 
+## Demo Video
+https://www.youtube.com/watch?v=picwSiypGis
+
