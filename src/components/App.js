@@ -106,45 +106,38 @@ class App extends Component {
     window.onresize = this.fixIconHeightOffset.bind(this);
   }
 
+  openNav() {
+     return (document.getElementById("mySidenav").style.width = "250px");
+  }
+
+
+
   render() {
     return (
       <div className="App" ref={(appEl) => this.appEl = appEl}>
         <div className="App-header">
           <img className="App-logo" src={logo} style={{display: "inline" }} />
           <h4 style={{ display: "inline" }}>LinkedIn Hackathon</h4>
+          <span style={{float: "right"}} onClick={() => this.openNav()}>Meet New People</span>
+
         </div>
         <div className="map" onClick={() => this.toggleCard(null)}>
           <img className="card-1" src={floorplan} ref={(im) => this.mapImg = im}
               style={{ position: 'absolute', top: 0, left: 0, width: "100%"}} />
           {this.state.people.map((p, i) => (<ProfileCard key={i} {...p} />))}
         </div>
+        <Recommendation/>
 
 
-        <div id="mySidenav" className="sidenav">
-        <a href="javascript:void(0)" className="closebtn" onClick={() => this.closeNav()}>&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-        </div>
 
-        <span onClick={() => this.openNav()}>open</span>
 
-        <div id="main">
-        </div>
 
-    
+
       </div>
     );
   }
 
-  openNav() {
-     return (document.getElementById("mySidenav").style.width = "250px");
-  }
 
- closeNav() {
-       return (document.getElementById("mySidenav").style.width = "0");
-  }
 }
 
 export default App;
