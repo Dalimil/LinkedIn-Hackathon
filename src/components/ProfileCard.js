@@ -12,10 +12,13 @@ class ProfileCard extends React.Component {
   render() {
     return (
       <div className="profilecard-container"
-          style={{ top: this.props.coords.top, left: this.props.coords.left}} >
-        <div className={"profilecard-inner card-1" + (this.props.expanded ? " expanded" : "")}
-            onClick={() => this.props.toggleCard(this.props.index)}
-            style={{ backgroundImage: this.props.expanded ? 'none' : `url(${this.props.img})`}}>
+          style={{ top: this.props.coords.topFixed + "%", left: this.props.coords.left + "%"}} >
+        <div className={"profilecard-inner card-1" + (this.props.expanded ? " expanded" : "") +
+            " " + this.props.pulseColor}
+            onClick={(e) => { e.preventDefault(); this.props.toggleCard(this.props.index); return false; }}
+            style={{
+              backgroundImage: this.props.expanded ? 'none' : `url(${this.props.img})`
+            }}>
           {this.props.expanded ? (
             <CSSTransitionGroup
                 transitionName="profilecard-contents-group"

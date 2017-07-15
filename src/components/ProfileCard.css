@@ -1,9 +1,9 @@
 :root {
-  --icon-size: 55px;
+  --icon-size: 30px;
   --icon-size-big: 80px;
 }
 
-@keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);}}
 
 
 .profilecard-container {
@@ -21,11 +21,8 @@
   border-radius: 100%;
   cursor: pointer;
   transition: all 0.3s;
-  margin: 1em;
-  padding: 1em;
+  transform: translate(-50%, -50%);
   overflow: hidden;
-
-  box-shadow: 0 0 0 0px rgba(232, 76, 61, 0.7);
   /*animation: pulse 3.25s infinite cubic-bezier(0.66, 0, 0, 1);*/
   animation: pulse 2s infinite ease-in-out;
 }
@@ -35,6 +32,29 @@
   height: 200px;
   border-radius: 5px;
   animation: none;
+  padding: 1em;
+  z-index: 10;
+}
+.profilecard-inner.red {
+  border: 1px solid rgba(232, 76, 61, 0.7);
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+}
+.profilecard-inner.red.expanded {
+  border: 5px solid rgba(232, 76, 61, 0.7);
+}
+.profilecard-inner.amber {
+  border: 1px solid rgba(255, 153, 0, 0.7);
+  box-shadow: 0 0 0 0 rgba(255, 153, 0, 0.7);
+}
+.profilecard-inner.amber.expanded {
+  border: 5px solid rgba(255, 153, 0, 0.7);
+}
+.profilecard-inner.green {
+  border: 1px solid rgba(60, 250, 61, 0.7);
+  box-shadow: 0 0 0 0 rgba(60, 250, 61, 0.7);
+}
+.profilecard-inner.green.expanded {
+  border: 5px solid rgba(60, 250, 61, 0.7);
 }
 
 .profilecard-photo {
