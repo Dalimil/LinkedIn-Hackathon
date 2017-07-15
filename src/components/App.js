@@ -4,6 +4,7 @@ import './App.css';
 import ProfileCard from './ProfileCard'
 import { people } from './people';
 import floorplan from './floor-plan/floor-plan.png';
+import Recommendation from './Recommendation'
 
 class App extends Component {
   constructor(props) {
@@ -68,7 +69,7 @@ class App extends Component {
       })
     };
   }
-  
+
   toggleCard(ind) {
     if (this.lastPopupFix + 1000 > Date.now()) {
       // fix double click
@@ -118,9 +119,32 @@ class App extends Component {
               style={{ position: 'absolute', top: 0, left: 0, width: "100%"}} />
           {this.state.people.map((p, i) => (<ProfileCard key={i} {...p} />))}
         </div>
-        
+
+
+        <div id="mySidenav" className="sidenav">
+        <a href="javascript:void(0)" className="closebtn" onClick={() => this.closeNav()}>&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        </div>
+
+        <span onClick={() => this.openNav()}>open</span>
+
+        <div id="main">
+        </div>
+
+    
       </div>
     );
+  }
+
+  openNav() {
+     return (document.getElementById("mySidenav").style.width = "250px");
+  }
+
+ closeNav() {
+       return (document.getElementById("mySidenav").style.width = "0");
   }
 }
 
