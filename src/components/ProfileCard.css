@@ -21,8 +21,7 @@
   border-radius: 100%;
   cursor: pointer;
   transition: all 0.3s;
-  margin: 1em;
-  padding: 1em;
+  transform: translate(-50%, -50%);
   overflow: hidden;
 
   box-shadow: 0 0 0 0px rgba(232, 76, 61, 0.7);

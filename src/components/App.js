@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import ProfileCard from './ProfileCard'
 import { people } from './people';
+import floorplan from './floor-plan/floor-plan.png';
 
 class App extends Component {
   constructor(props) {
@@ -13,20 +14,21 @@ class App extends Component {
           name: "John Doe",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
-          coords: { top: "30%", left: "50%" },
+          coords: { top: 30, left: 50 },
           img: people[0]
         },
         {
           name: "John Doe 2",
           role: "Senior Product Manager",
           description: "I spent the past 3 years of my career as a senior product manager, working on internal cloud solutions.",
-          coords: { top: "80%", left: "80%" },
+          coords: { top: 100, left: 80 },
           img: people[1]
         }
       ].map((x, i) => {
         x.index = i;
         x.expanded = false;
         x.toggleCard = this.toggleCard.bind(this);
+        x.coords.topFixed = x.coords.top;
         return x;
       })
     };
@@ -45,14 +47,32 @@ class App extends Component {
     })
   }
 
+  fixIconHeightOffset() {
+    const ratio = this.mapImg.clientHeight / this.appEl.clientHeight;
+    const newPeople = this.state.people.map(p => {
+      p.coords.topFixed = Math.round(p.coords.top * ratio);
+      return p;
+    });
+    this.setState({
+      people: newPeople
+    });
+  }
+
+  componentDidMount() {
+    this.fixIconHeightOffset();
+    window.onresize = this.fixIconHeightOffset.bind(this);
+  }
+
   render() {
     return (
-      <div className="App">
+      <div className="App" ref={(appEl) => this.appEl = appEl}>
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h3>LinkedIn Hackathon</h3>
+          <img className="App-logo" src={logo} style={{display: "inline" }} />
+          <h4 style={{ display: "inline" }}>LinkedIn Hackathon</h4>
         </div>
-        <div className="map card-1">
+        <div className="map">
+          <img className="card-1" src={floorplan} ref={(im) => this.mapImg = im}
+              style={{ position: 'absolute', top: 0, left: 0, width: "100%"}} />
           {this.state.people.map((p, i) => (<ProfileCard key={i} {...p} />))}
         </div>
         
