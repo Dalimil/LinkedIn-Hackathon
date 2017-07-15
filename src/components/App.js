@@ -175,6 +175,10 @@ class App extends Component {
   }
 
   fixIconHeightOffset() {
+    if (!this.mapImg || !this.appEl) {
+      setTimeout(this.fixIconHeightOffset, 1000);
+      return;
+    }
     const ratio = this.mapImg.clientHeight / this.appEl.clientHeight;
     const newPeople = this.state.people.map(p => {
       p.coords.topFixed = Math.round(p.coords.top * ratio);

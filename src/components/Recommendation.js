@@ -30,7 +30,7 @@ class Recommendation extends React.Component {
       <p><span className="w3-tag w3-round-medium w3-blue">Fri, 5-6pm @ the eBar</span>
       </p>
 
-        <img src={people[1]} alt="Avatar" class="w3-left w3-circle" style={{width:"80px"}}/>
+        <img src={people[1]} alt="Avatar" className="w3-left w3-circle" style={{width:"80px"}}/>
 
         <div style={{ display: "flex", flexWrap: "wrap"}}>
           <span style={{ margin: "0.5em 0.5em 0 0" }} className="w3-tag w3-round-medium w3-teal">Marketing</span>
