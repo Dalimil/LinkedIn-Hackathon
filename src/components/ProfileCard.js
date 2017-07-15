@@ -21,14 +21,16 @@ class ProfileCard extends React.Component {
       <div className="profilecard-container"
           style={{ top: this.props.coords.top, left: this.props.coords.left}} >
         <div className={"profilecard-inner card-1" + (this.state.expanded ? " expanded" : "")}
-          onClick={this.toggleCard.bind(this)} >
+            onClick={this.toggleCard.bind(this)}
+            style={{ backgroundImage: this.state.expanded ? 'none' : `url(${this.props.img})`}}>
           {this.state.expanded ? (
             <CSSTransitionGroup
                 transitionName="profilecard-contents-group"
                 transitionAppear={true}
                 transitionAppearTimeout={500}>
               <div style={{ display: "flex", marginBottom: "1em" }}>
-                <div className="profilecard-photo">OK</div>
+                <div className="profilecard-photo" style={{backgroundImage: `url(${this.props.img})`}}>
+                </div>
                 <div className="profilecard-text-container">
                   <div className="profilecard-title">{this.props.name}</div>
                   <div className="profilecard-role">{this.props.role}</div>

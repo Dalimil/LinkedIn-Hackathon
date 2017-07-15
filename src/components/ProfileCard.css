@@ -1,3 +1,7 @@
+:root {
+  --icon-size: 55px;
+  --icon-size-big: 80px;
+}
 
 .profilecard-container {
   position: absolute;
@@ -5,9 +9,12 @@
 
 .profilecard-inner {
   position: relative;
-  width: 50px;
-  height: 50px;
-  background-color: #00BFA5;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 1px solid white;
   border-radius: 100%;
   cursor: pointer;
   transition: all 0.3s;
@@ -23,15 +30,21 @@
 }
 
 .profilecard-photo {
-  width: 50px;
-  height: 50px;
-  background: #ee3333;
+  width: var(--icon-size-big);
+  height: var(--icon-size-big);
+  background: #555;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 1px solid white;
   border-radius: 5px;
   flex-shrink: 0;
 }
 
 .profilecard-title {
   font-size: 1.5em;
+}
+.profilecard-role {
+  color: #777;
 }
 
 .profilecard-descr {
