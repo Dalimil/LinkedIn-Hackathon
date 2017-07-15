@@ -206,7 +206,8 @@ class App extends Component {
           <div style={{ display: "flex", alignItems: "center" }}>
             <img className="App-logo" src={logo} style={{display: "inline-block" }} />
 
-            <h4 style={{ display: "inline" }}>FLOOR</h4>
+            <h4 style={{ display: "inline" }}>FLOOR</h4><p style={{marginTop: "12px", color:"grey"}}>&nbsp;&nbsp;from the ground up</p>
+
           </div>
           <span style={{display: "inline-block", cursor: "pointer", fontWeight: "bold", paddingRight: "1em", zIndex: 10}} onClick={() => this.openNav()}>
           <img className="Meet" src={meet} style={{display: "inline-block" }} />
