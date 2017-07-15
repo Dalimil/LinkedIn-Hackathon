@@ -10,6 +10,20 @@
   vertical-align: top;
 }
 
+.Meet {
+  height: 25px;
+  margin: 0 1em 0 0.5em;
+  padding: 0;
+  vertical-align: top;
+}
+
+.Connect {
+  height: 25px;
+  margin: 0 1em 0 0.5em;
+  padding: 0;
+  vertical-align: top;
+}
+
 .App-header {
   display: flex;
   align-items: center;

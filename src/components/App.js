@@ -203,7 +203,10 @@ class App extends Component {
 
             <h4 style={{ display: "inline" }}>FLOOR</h4>
           </div>
-          <span style={{display: "inline-block", cursor: "pointer", fontWeight: "bold", paddingRight: "1em"}} onClick={() => this.openNav()}>Meet New People</span>
+          <span style={{display: "inline-block", cursor: "pointer", fontWeight: "bold", paddingRight: "1em"}} onClick={() => this.openNav()}>
+          <img className="Meet" src={meet} style={{display: "inline-block" }} />
+
+          Meet New People</span>
         </div>
 
         <div className="map" onClick={() => this.toggleCard(null)}>
